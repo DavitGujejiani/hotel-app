@@ -1,0 +1,9 @@
+span {
+    font-weight: bold;
+    color: #555;
+}
+
+div.info-line {
+    display: flex;
+    white-space: pre-wrap;
+}
