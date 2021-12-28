@@ -5,8 +5,7 @@ import InfoCard from "./components/InfoCard";
 function ContactPage() {
     return (
         <div className="w-full flex justify-center py-24 border">
-            <div className="w-full max-w-2xl">
-
+            <div className="w-full max-w-4xl">
                 <ContactForm />
                 <InfoCard />
             </div>
