@@ -1,10 +1,22 @@
-import React from 'react';
-import Header from './Components/General/Header';
+import React from "react";
+import Header from "./Components/General/Header";
+import Slider from "./Components/General/slider/Slider";
+import Home from "./Components/modules/About/Home";
+import { Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
-    return (
-        <Header /> 
-    )
+  return (
+    <>
+      <Header />
+      <Slider/>
+      <Routes>
+          <Route path="/home" element={<Home/>} />
+
+          
+      </Routes>
+    </>
+  );
 }
 
 export default App;
