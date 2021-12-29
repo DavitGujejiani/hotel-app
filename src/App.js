@@ -1,11 +1,22 @@
-import React from 'react';
+import React from "react";
+import Header from "./Components/General/Header";
+import Slider from "./Components/General/slider/Slider";
+import Home from "./Components/modules/About/Home";
+import { Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
-    return (
-        <h1 className="text-3xl font-bold underline text-red-100">
-            Hello world!
-        </h1>
-    )
+  return (
+    <>
+      <Header />
+      <Slider/>
+      <Routes>
+          <Route path="/home" element={<Home/>} />
+
+          
+      </Routes>
+    </>
+  );
 }
 
 export default App;
